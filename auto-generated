@@ -1,0 +1,14 @@
+import os
+
+def create_auto_generated_directory():
+    repo_path = "/path/to/commerce-pwa-studio"  # Replace with the actual path to the commerce-pwa-studio repository
+    auto_generated_path = os.path.join(repo_path, "auto-generated")
+    
+    if not os.path.exists(auto_generated_path):
+        os.makedirs(auto_generated_path)
+        print("Created auto-generated directory.")
+    else:
+        print("auto-generated directory already exists.")
+
+if __name__ == "__main__":
+    create_auto_generated_directory()

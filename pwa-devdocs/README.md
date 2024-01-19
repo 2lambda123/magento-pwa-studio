@@ -40,6 +40,13 @@ Use the following instructions to build a local instance of the documentation.
 
 In the **pwa-devdocs** directory, run the following command to build and run the site locally:
 
+6. Run the following command to build the documentation locally and verify the changed files:
+
+   ```
+   npm start
+   ```
+   Access the relevant URLs mentioned in the `CREATE_RELEASE_NOTES.md` file (lines 150-151) to ensure the changes are reflected correctly.
+
 ```
 npm start
 ```

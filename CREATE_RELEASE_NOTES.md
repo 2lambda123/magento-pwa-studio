@@ -57,7 +57,10 @@ Here are the steps you need to follow to create PWA Studio release notes. :
 
    This command generates a new `CHANGELOG.md` in the project's root to replace the existing one.
 
-6. Add relevant content to the following sections of the `CHANGELOG.md`:
+5. Copy the `auto-generated` directory, with all its subdirectories and files, from the `magento/pwa-studio` output.
+6. Replace the existing `src/data/auto-generated` directory in the `commerce-pwa-studio` repository with the copied `auto-generated` directory.
+7. This replacement may result in changes to existing files. Verify the changes by running `yarn dev` and accessing the relevant URLs mentioned in lines 150-151.
+8. Commit and push your changes to the repository.
 
    - **Documentation changes**
    - **Known issues**
